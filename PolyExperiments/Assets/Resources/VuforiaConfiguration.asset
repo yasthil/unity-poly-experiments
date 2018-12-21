@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   vuforia:
     vuforiaLicenseKey: AZadcMz/////AAABmQG1n2GqkElIk+slaRQ8OdYTxFBU0GsD+iKxisKmq7Aa00AH4Hzu5RRL55q0wRkSr1Pbhu19vLrJchEK9MBIknk1OpmdqYacjJSfSvmsHRw8JqH/n0IwZ8TWyOH1HfkKDtRuJ31izrZv6NFTNrfwXaHm9W8L0w0smVTyDOjpcVYRc2KzYTt3zrK9TdB/WntJX77d9lVmIh2zC09n33GIjhT56Du/L3ngTzMvxEwDzIG96ia76DxXoRS43eP69j1XPsL/cfoSKoUvUpSCmKNjE0I3UMR+wKDZmCkUr3bsRr+ebt/OrLA0CKXQMRXtIaoGTrBxRMVmTzkhdVs+l889vhdeKSoaASljjD2eoQ0qWefj
-    ufoLicenseKey: QVlYSnJnRC8vLy8vQUFBQUtPRk9vNnFxNUVDem5yUjdUTmhXRXN3UCtGU0MrZ0ZzYmhoRkhSMHJOdE1BeFBHSHJZWlZvSnZpcDJKNkl6aDBDeXFyNXNNKzgxbHFEOCtmc0M2VE9OZHRucVZJZDg3M3RYeDZjTmd3UEVGYk0yS2R0THg1ekIxTjY1cGJmc3lWNVl1SmJ5dXdBbVY2VTYxRUJGY0FBNnh5aHB6TWRuM2l1WER6MHR0Zk1HRnFkeXFUSzdXTGpWN3hUVEVRSllqaFJlVTRTZVJxQzhWdWdWUlJTNUNDR05mbGs5dUpCMlQ1NjhocjVOd243dXVKUlJQZDNrVVAzSUI5cnBiRUxhUVA1blp0R1BIcHZBWHQzdTNXNEpDdVFIMUY1aXpTRGVEZEVOTmthSy9rWkpoYTBkaENSOUJ4VkxaajY1ZWMyeUMwYlNNMHJkSTdYZjBteTZaQXQwRnZYY0g3UjVRVzRZUzBsbTJCWWRpSkJyOXU=
+    ufoLicenseKey: QWJrb2RqUC8vLy8vQUFBQUtQSndOUDZpWlVqUnBNV1ltNVBXTUtoT2E5ejAyVy9iNWd0TFhITWVKcloyUDdwZExzQVA0UThQU09NQTV2YmZORnlDYmJPMGVyWHVTckFXbkFXWUx0VGowVlRyL3g0Vy96NjRnV05pYlN1TGZIcUpvS2R2ZzdhOXREcDhnUUsvcldwTkUwcnlLNTI2WHJPTURnMzFEbUpDcmRkbkg5UHg1Rk5zNWZPVC9UbWd0c0NwMjFTMUxja09SeXpQOThPdkJDdFNBcXlXZGV0WmhHbHhCM1ozYzNzQytWeUE0UVkzUkxjdGNNdTE0Y2lNblVJSm1PQzJGNlZlTWZOeXVYMGxUZGdMZmlHSXpJMlhGdTlXUDRBSThtdnJxcW1IZSsvbGQrRXRPMUlXdFpzdEFqdFFvQ0t2cGtzYlNMaXh1NW5QWHRpRU1kYjlPSHdEZ1JiNlJIYjlLNjdiekZuRlBPQUI1SnNOM0Y1ZFJnKy8=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
     maxSimultaneousImageTargets: 1
@@ -48,8 +48,9 @@ MonoBehaviour:
   videoBackground:
     clippingMode: 0
     numDivisions: 2
-    videoBackgroundShader: {fileID: 0}
-    matteShader: {fileID: 0}
+    videoBackgroundShader: {fileID: 4800000, guid: f40623b353e2f1943b1b3ba42975db7a,
+      type: 3}
+    matteShader: {fileID: 4800000, guid: 66d0d78a3000021448b598bb54a3bfdf, type: 3}
     videoBackgroundEnabled: 1
   deviceTracker:
     autoInitTracker: 0
