@@ -65,7 +65,7 @@ MonoBehaviour:
     autoInitTracker: 0
     autoStartTracker: 0
   webcam:
-    deviceNameSetInEditor: 
+    deviceNameSetInEditor: Dynex 1.3MP Webcam
     flipHorizontally: 0
     turnOffWebCam: 0
     renderTextureLayer: 30
