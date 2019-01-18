@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using PolyToolkit;
+using UnityEngine.UI;
 
 public class ModelLoader : MonoBehaviour
 {
     public int assetCount = 0;
     public GameObject _parentContainer;
+    public InputField _inputField;
+
+
     private static ModelLoader _instance;
     private List<GameObject> _assetsLoaded;
     private float _symbolYOffset = 0.5f;
@@ -35,14 +39,32 @@ public class ModelLoader : MonoBehaviour
 
     void Start()
     {
-        _assetsLoaded = new List<GameObject>();
+        _assetsLoaded = new List<GameObject>();       
+    }
+    private void ClearAssets()
+    {
+        for (int i = 0; i < _assetsLoaded.Count; i++)
+        {
+            Destroy(_assetsLoaded[i]);
+        }
+        _assetsLoaded.Clear();
+    }
+
+    public void Search()
+    {
+        ClearAssets();
 
         // Create a new request
         PolyListAssetsRequest req = new PolyListAssetsRequest();
         req.orderBy = PolyOrderBy.BEST;
 
         // Search by keywords    
-        req.keywords = "dragon";
+        if(_inputField.text == "")
+        {
+            _inputField.text = "dog";
+        }
+        req.keywords = _inputField.text;
+        
 
         // Make the request with a callback function
         PolyApi.ListAssets(req, GetSearchResults);
